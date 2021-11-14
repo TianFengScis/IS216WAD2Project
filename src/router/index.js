@@ -15,24 +15,24 @@ const routes = [
 
   },
   {
-    path: location.hostname + '/Login',
+    path: 'Login',
     name: 'Login',
     component: Login
   },
   {
-    path: '/Community',
+    path: 'Community',
     name: 'Community',
     component: Community
   }
   ,
   {
-    path: '/Register',
+    path: 'Register',
     name: 'Register',
     component: Register
   }
   ,
   {
-    path: '/Messages',
+    path: 'Messages',
     name: 'Messages',
     component: Messages
   }
