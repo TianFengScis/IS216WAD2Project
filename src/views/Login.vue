@@ -14,7 +14,7 @@
                         <hr>
                         <a class="text-muted" href="#" ><u @click="showForgetPassword = true">Forgot password?</u></a>
                         <br>
-                        <a class="text-info" href="/register"><u>Register</u></a>
+                        <a class="text-info" href="Register"><u>Register</u></a>
                     </div>
                 </div>
             </div>

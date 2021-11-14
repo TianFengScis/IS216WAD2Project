@@ -16,7 +16,7 @@
                         <button v-if="password == cPassword" type="submit" @click="registerNewUser">Register</button>
                         <hr>
                         <p class="text-muted">
-                            Have an account? <a href="login.html" class="text-reset">LogIn</a>.
+                            Have an account? <a href="Login" class="text-reset">LogIn</a>.
                         </p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ export default {
             this.password = "";
             this.cPassword = "";
             this.username = "";
-            setTimeout(() => this.$router.push({ path: '/login'}), 3000);
+            setTimeout(() => this.$router.push({ path: 'Login'}), 3000);
         })
         .catch((error) => {
             var errorCode = error.code;

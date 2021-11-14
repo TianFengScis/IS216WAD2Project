@@ -9,8 +9,8 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav" style="text-align: left;">
                     <a class="nav-link active text-light my-2" aria-current="page" href="\">Home</a>
-                    <a class="nav-link text-light my-2" href="\Community">Community</a>
-                    <a class="nav-link text-light my-2" href="\Messages">Messages</a>
+                    <a class="nav-link text-light my-2" href="Community">Community</a>
+                    <a class="nav-link text-light my-2" href="Messages">Messages</a>
                     <a class="nav-link text-light my-2" href=".\Games\Dodge the Anchor\ss.html">Games</a>
                 </div>
                 <div style="text-align: right;">
@@ -33,10 +33,10 @@ export default {
   },
   methods :{
     loginPage(){
-        window.location.href = "/Login";
+        window.location.href = "Login";
     },
     registerPage(){
-        window.location.href = "/Register";
+        window.location.href = "Register";
     },
     logout(){
         var auth = getAuth();

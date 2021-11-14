@@ -668,7 +668,7 @@ export default {
       })
     },
     toMessage(){
-        window.location.href = "/Messages";
+        window.location.href = "Messages";
     },
     newJoke(){
       axios.get("https://geek-jokes.sameerkumar.website/api?format=json")
@@ -853,7 +853,7 @@ export default {
         document.getElementById("joke").click()
     }else{
       console.log("No user");
-      window.location.href="/login";
+      window.location.href="Login";
     }
     });
   },

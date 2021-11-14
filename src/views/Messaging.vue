@@ -200,7 +200,7 @@ export default{
             // ...
         }else{
         console.log("No user");
-        window.location.href="/login";
+        window.location.href="Login";
         }
         });
     }
