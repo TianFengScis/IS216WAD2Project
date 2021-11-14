@@ -1,0 +1,122 @@
+* {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+
+    .container{
+        margin-top: 10%;
+    }
+
+    .game{
+        width: 500px;
+        height: 200px;
+        border: 1px solid black;
+        margin: auto;
+        background-color: coral;
+    }
+    #character{
+        width: 30px;
+        height: 80px;
+        background-image: url(img/giraffe.png);
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        position:relative;
+        top: 120px;
+    }
+    .animate{
+        animation: jump 0.5s linear;
+    }
+    @keyframes jump{
+        0%{top: 120px;}
+        30%{top: 70px;}
+        70%{top: 70px;}
+        100%{top: 120px;}
+    }
+
+    #block{
+        background-image: url(img/cacti.jpg);
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 100px;
+        left: 500px;
+        animation: block 2s infinite linear;
+    }
+    #block2{
+        background-image: url(img/weed.png);
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        width: 15px;
+        height: 15px;
+        position: relative;
+        top:85px;
+        left: 500px;
+        border-radius: 50%;
+        animation: block 3s infinite linear;
+    }
+
+    @keyframes block{
+        0%{left: 500px}
+        100%{left: -20px}
+    }
+
+
+    p{
+        text-align: center;
+    }
+
+    body {
+        background-image: radial-gradient(#e53935 20%, transparent 23%),
+            radial-gradient(#f28e29 20%, transparent 23%);
+        background-color: #212121;
+        background-position: 0 0, 50px 50px;
+        background-size: 100px 100px;
+    }
+
+    .gameBody {
+        height: 600px;
+        width: 900px;
+        border: #f28e29 solid 10px;
+        border-radius: 20px;
+        position:relative;
+        top: 60px;
+        margin:auto;
+        background-color: #212121;
+        background-image:url(img/cactus_bg.jpg);
+    }
+
+
+    .text{
+        color: whitesmoke
+    }
+
+    div{
+        align-items: center;
+        text-align: center;
+    }
+
+    .maxed{
+        margin-right:0;
+        margin-left:0;
+        width:100%;
+        margin-top: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    #gameOver{
+        position: absolute;
+        margin: auto;
+        font-size: 50px;
+        color: yellow;
+        font-weight: bold;
+        background-color: red;
+    }
