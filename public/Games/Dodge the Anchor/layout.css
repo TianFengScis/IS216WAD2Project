@@ -1,0 +1,47 @@
+body {
+    background-image: radial-gradient(#e53935 20%, transparent 23%),
+        radial-gradient(#f28e29 20%, transparent 23%);
+    background-color: #212121;
+    background-position: 0 0, 50px 50px;
+    background-size: 100px 100px;
+  }
+
+.gameBody {
+    height: 520px;
+    width: 1000px;
+    border: #f28e29 solid 10px;
+    border-radius: 20px;
+    position:relative;
+    top: 60px;
+    margin: auto;
+    background-color: #212121;
+}
+
+
+.text{
+    color: whitesmoke
+}
+
+.center{
+    align-items: center;
+    text-align: center;
+}
+
+.maxed{
+    margin-right:0;
+    margin-left:0;
+    width:100%;
+    margin-top: 60px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#gameOver{
+    position: absolute;
+    margin: auto;
+    font-size: 50px;
+    color: yellow;
+    font-weight: bold;
+    background-color: red;
+}

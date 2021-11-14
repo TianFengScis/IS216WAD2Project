@@ -1,0 +1,120 @@
+[debug] [2021-11-14T04:09:19.952Z] ----------------------------------------------------------------------
+[debug] [2021-11-14T04:09:19.954Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2021-11-14T04:09:19.954Z] CLI Version:   9.22.0
+[debug] [2021-11-14T04:09:19.954Z] Platform:      darwin
+[debug] [2021-11-14T04:09:19.954Z] Node Version:  v14.18.1
+[debug] [2021-11-14T04:09:19.955Z] Time:          Sun Nov 14 2021 12:09:19 GMT+0800 (Singapore Standard Time)
+[debug] [2021-11-14T04:09:19.955Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-14T04:09:20.005Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-14T04:09:20.006Z] > authorizing via signed-in user (fengtian.2020@smu.edu.sg)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/tianfeng
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using wadproject-e347d. 
+[debug] [2021-11-14T04:09:30.956Z] > refreshing access token with scopes: []
+[debug] [2021-11-14T04:09:30.957Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-14T04:09:31.080Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sun, 14 Nov 2021 04:09:31 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-14T04:09:31.128Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/wadproject-e347d [none]
+[debug] [2021-11-14T04:09:31.440Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/wadproject-e347d 200
+[debug] [2021-11-14T04:09:31.441Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/wadproject-e347d {"projectId":"wadproject-e347d","projectNumber":"401322032845","displayName":"wadProject","name":"projects/wadproject-e347d","resources":{"hostingSite":"wadproject-e347d","storageBucket":"wadproject-e347d.appspot.com","locationId":"asia-southeast1"},"state":"ACTIVE"}
+[info] 
+=== Firestore Setup
+[debug] [2021-11-14T04:09:31.445Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-14T04:09:31.445Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-14T04:09:31.516Z] <<< HTTP RESPONSE 200 {"date":"Sun, 14 Nov 2021 04:09:31 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-14T04:09:31.563Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/wadproject-e347d/services/firestore.googleapis.com  
+ 
+[debug] [2021-11-14T04:09:32.904Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 14 Nov 2021 04:09:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-14T04:09:32.909Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/wadproject-e347d  
+ 
+[debug] [2021-11-14T04:09:33.128Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 14 Nov 2021 04:09:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-14T04:09:33.129Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-11-14T04:09:33.130Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-14T04:09:33.130Z] > authorizing via signed-in user (fengtian.2020@smu.edu.sg)
+[debug] [2021-11-14T04:09:33.131Z] [iam] checking project wadproject-e347d for permissions ["firebase.projects.get"]
+[debug] [2021-11-14T04:09:33.132Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/wadproject-e347d:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-11-14T04:09:34.158Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 14 Nov 2021 04:09:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=967","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-11-14T04:09:35.714Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/wadproject-e347d/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-11-14T04:09:36.965Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 14 Nov 2021 04:09:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-14T04:09:36.968Z] Found ruleset: projects/wadproject-e347d/rulesets/d32e7060-c537-488d-8109-bba8401613d0
+[debug] [2021-11-14T04:09:36.969Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/wadproject-e347d/rulesets/d32e7060-c537-488d-8109-bba8401613d0  
+ 
+[debug] [2021-11-14T04:09:38.209Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 14 Nov 2021 04:09:38 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2021-11-14T04:09:39.701Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/wadproject-e347d/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-11-14T04:09:39.703Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/wadproject-e347d/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-11-14T04:09:39.999Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 14 Nov 2021 04:09:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-14T04:09:40.019Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 14 Nov 2021 04:09:39 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"clear","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-11-14T04:09:52.056Z] TypeError: Cannot read property 'setRawMode' of null
+    at ReadStream.setRawMode (tty.js:76:28)
+    at Interface._setRawMode (readline.js:364:16)
+    at Interface.close (readline.js:527:10)
+    at ReadStream.ontermend (readline.js:261:10)
+    at ReadStream.emit (events.js:412:35)
+    at ReadStream.emit (domain.js:475:12)
+    at endReadableNT (internal/streams/readable.js:1334:12)
+    at processTicksAndRejections (internal/process/task_queues.js:82:21)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2021-11-14T04:09:52.062Z] Error: write EIO
+    at afterWriteDispatched (internal/stream_base_commons.js:156:25)
+    at writeGeneric (internal/stream_base_commons.js:147:3)
+    at WriteStream.Socket._writeGeneric (net.js:798:11)
+    at WriteStream.Socket._write (net.js:810:8)
+    at writeOrBuffer (internal/streams/writable.js:358:12)
+    at WriteStream.Writable.write (internal/streams/writable.js:303:10)
+    at Console.log (/usr/local/lib/node_modules/firebase-tools/node_modules/winston/lib/winston/transports/console.js:79:23)
+    at Console._write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/index.js:103:17)
+    at doWrite (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:428:64)
+    at writeOrBuffer (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:417:5)
+    at Console.Writable.write (/usr/local/lib/node_modules/firebase-tools/node_modules/winston-transport/node_modules/readable-stream/lib/_stream_writable.js:334:11)
+    at DerivedLogger.ondata (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:681:20)
+    at DerivedLogger.emit (events.js:412:35)
+    at DerivedLogger.emit (domain.js:475:12)
+    at addChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:298:12)
+    at readableAddChunk (/usr/local/lib/node_modules/firebase-tools/node_modules/readable-stream/lib/_stream_readable.js:280:11)
+[error] 
+[error] Error: An unexpected error has occurred.
